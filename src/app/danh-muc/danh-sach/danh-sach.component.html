@@ -1,0 +1,24 @@
+<button type="button" class="btn btn-primary btn-lg" routerLink="/themDanhSach">Thêm sản phẩm</button>
+
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Mã</th>
+    <th scope="col">Tên sản phẩm</th>
+    <th scope="col">Trang Thái</th>
+  </tr>
+  </thead>
+
+
+
+  <tr *ngFor="let danhSach of danhSachs">
+
+    <td>{{ danhSach.id }}</td>
+
+    <td>{{ danhSach.name }}</td>
+
+  </tr>
+
+
+
+</table>
